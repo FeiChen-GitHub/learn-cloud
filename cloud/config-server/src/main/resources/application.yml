@@ -1,0 +1,22 @@
+server:
+  port: 8901
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+#        native:
+#          search-locations: classpath:/shared
+        git: #配置存储配置信息的Git仓库
+          uri: https://github.com/FeiChen-GitHub/springcloud-config.git
+#          username: 1194863482@qq.com
+#          password: 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
+          clone-on-start: true #开启启动时直接从git获取配置
+          timeout: 30
+#          try-master-branch: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
