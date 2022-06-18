@@ -11,6 +11,7 @@
         <module name="eureka-security-server" />
         <module name="hystrix-server" />
         <module name="eureka-client" />
+        <module name="config-client" />
         <module name="hystrix-dashboard" />
         <module name="zuul-proxy" />
         <module name="ribbon-service" />
@@ -21,6 +22,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-parent" target="1.8" />
+      <module name="config-client" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-security-server" target="1.8" />
@@ -38,6 +40,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud-parent" options="-parameters" />
+      <module name="config-client" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-security-server" options="-parameters" />
