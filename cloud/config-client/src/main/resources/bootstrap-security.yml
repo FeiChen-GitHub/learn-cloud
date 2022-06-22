@@ -1,14 +1,16 @@
 server:
-  port: 9001
+  port: 9002
 spring:
   application:
     name: config-client
   cloud:
     config:
-      profile: prod
-      label: master
-      uri: http://localhost:8901
+      profile: dev
+      label: dev
+      uri: http://localhost:8905
       name: config
+      username: root
+      password: 1234
 eureka:
   client:
     service-url:

@@ -1,23 +1,18 @@
 server:
-  port: 8901
+  port: 8905
 spring:
   application:
-    name: config-server
+    name: config-security-server
   cloud:
     config:
       server:
-#        native:
-#          search-locations: classpath:/shared
         git: #配置存储配置信息的Git仓库
           uri: git@192.168.211.241:/home/git/gitrepo/springcloud-config.git
           username: git
           password: 1234
           clone-on-start: true #开启启动时直接从git获取配置
           timeout: 30
-          search-paths: '{application}'
-#          try-master-branch: true
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8000/eureka
+  security:
+    user:
+      name: root
+      password: 1234
