@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-security-server/config-security-server.iml" filepath="$PROJECT_DIR$/config-security-server/config-security-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consul-ribbon-service/consul-ribbon-service.iml" filepath="$PROJECT_DIR$/consul-ribbon-service/consul-ribbon-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consul-user-service/consul-user-service.iml" filepath="$PROJECT_DIR$/consul-user-service/consul-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-security-server/eureka-security-server.iml" filepath="$PROJECT_DIR$/eureka-security-server/eureka-security-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />

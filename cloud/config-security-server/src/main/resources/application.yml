@@ -12,7 +12,14 @@ spring:
           password: 1234
           clone-on-start: true #开启启动时直接从git获取配置
           timeout: 30
+#          search-paths: '{application}'
   security:
     user:
       name: root
       password: 1234
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+

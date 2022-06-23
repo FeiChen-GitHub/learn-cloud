@@ -1,0 +1,27 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      profile: dev
+      label: dev
+      discovery:
+        service-id: config-server
+        enabled: true
+  rabbitmq:
+    password: guest
+    username: guest
+    host: localhost
+    port: 5672
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'refresh'  # /actuator/refresh

@@ -17,6 +17,8 @@
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/config-security-server/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-ribbon-service/pom.xml" />
       </list>
     </option>
   </component>

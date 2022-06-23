@@ -1,0 +1,34 @@
+server:
+  port: 8904
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+#        native:
+#          search-locations: classpath:/shared
+        git: #配置存储配置信息的Git仓库
+          uri: git@192.168.211.241:/home/git/gitrepo/springcloud-config.git
+          username: git
+          password: 1234
+          clone-on-start: true #开启启动时直接从git获取配置
+          timeout: 30
+          search-paths: '{application}'
+#          try-master-branch: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
