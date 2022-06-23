@@ -1,10 +1,11 @@
 package com.learn.cloud.consuluserservice.controller;
 
-import com.learn.cloud.userservice.entity.User;
-import com.learn.cloud.userservice.service.UserService;
-import com.learn.cloud.userservice.vo.CommonResult;
+import com.learn.cloud.consuluserservice.entity.User;
+import com.learn.cloud.consuluserservice.service.UserService;
+import com.learn.cloud.consuluserservice.vo.CommonResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;

@@ -9,3 +9,6 @@ spring:
       host: localhost
       discovery:
         service-name: ${spring.application.name}
+
+service-url:
+  user-service: http://consul-user-service

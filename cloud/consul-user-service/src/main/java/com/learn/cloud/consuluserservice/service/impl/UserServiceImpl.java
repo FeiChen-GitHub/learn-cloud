@@ -1,7 +1,7 @@
 package com.learn.cloud.consuluserservice.service.impl;
 
-import com.learn.cloud.userservice.entity.User;
-import com.learn.cloud.userservice.service.UserService;
+import com.learn.cloud.consuluserservice.entity.User;
+import com.learn.cloud.consuluserservice.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

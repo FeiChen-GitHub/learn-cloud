@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/cloud-parent.iml" filepath="$PROJECT_DIR$/cloud-parent/cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-security-server/config-security-server.iml" filepath="$PROJECT_DIR$/config-security-server/config-security-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consul-config-client/consul-config-client.iml" filepath="$PROJECT_DIR$/consul-config-client/consul-config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/consul-ribbon-service/consul-ribbon-service.iml" filepath="$PROJECT_DIR$/consul-ribbon-service/consul-ribbon-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/consul-user-service/consul-user-service.iml" filepath="$PROJECT_DIR$/consul-user-service/consul-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />

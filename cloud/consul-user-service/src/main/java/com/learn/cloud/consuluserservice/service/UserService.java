@@ -1,6 +1,6 @@
 package com.learn.cloud.consuluserservice.service;
 
-import com.learn.cloud.userservice.entity.User;
+import com.learn.cloud.consuluserservice.entity.User;
 
 import java.util.List;
 
