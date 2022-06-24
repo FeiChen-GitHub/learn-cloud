@@ -46,18 +46,19 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getByUsername(String username) {
         logger.info("......Method: {}, port: {}", "getByUsername", port);
-        return null;
+        User user = new User();
+        user.setId(System.currentTimeMillis());
+        user.setUsername(username );
+        return user;
     }
 
     @Override
     public void update(User user) {
         logger.info("......Method: {}, port: {}", "update", port);
-
     }
 
     @Override
     public void delete(Long id) {
         logger.info("......Method: {}, port: {}", "delete", port);
-
     }
 }

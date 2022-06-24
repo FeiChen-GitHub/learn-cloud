@@ -1,0 +1,63 @@
+server:
+  port: 9202
+service-uri:
+  user-service: http://localhost:8201
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+#        - id: after_route
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - After=2022-06-24T06:30:00+08:00[Asia/Shanghai]
+#        - id: before_route
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - Before=2022-06-24T16:30:00+08:00[Asia/Shanghai]
+#        - id: between_route
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - Between=2022-06-24T10:30:00+08:00[Asia/Shanghai],2022-06-24T17:30:00+08:00[Asia/Shanghai]
+#        - id: cookie_route
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - Cookie=username,macro
+#        - id: header_route
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - Header=X-Request-Id, \d+
+#        - id: host_route
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - Host=**.fc.com
+#        - id: method_route
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - Method=GET
+#        - id: post_route
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - Method=POST
+#            - Path=/user/create
+#        - id: query_route
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - Query=username
+        - id: remoteaddr_route
+          uri: ${service-uri.user-service}
+          predicates:
+            - RemoteAddr=127.0.0.1
+#        - id: weight_high
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - Weight=group1, 6
+#        - id: weight_low
+#          uri: ${service-uri.user-service}
+#          predicates:
+#            - Weight=group2, 4
+#        - id: path_route #路由的ID
+#          uri: ${service-uri.user-service}/user/{id} #匹配后路由地址
+#          predicates: # 断言，路径相匹配的进行路由
+#            - Path=/user/{id}
