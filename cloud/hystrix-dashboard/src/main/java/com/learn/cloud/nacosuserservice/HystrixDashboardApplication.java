@@ -1,4 +1,4 @@
-package com.learn.cloud.demo;
+package com.learn.cloud.nacosuserservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
