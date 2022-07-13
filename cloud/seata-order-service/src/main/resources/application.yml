@@ -1,0 +1,26 @@
+server:
+  port: 8180
+spring:
+  application:
+    name: seata-order-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    alibaba:
+      seata:
+        tx-service-group: fsp_tx_group #自定义事务组名称需要与seata-server中的对应
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 1234
+    url: jdbc:mysql://192.168.211.241:3306/seat_service
+    username: root
+feign:
+  hystrix:
+    enabled: false
+logging:
+  level:
+    io:
+      seata: info
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
